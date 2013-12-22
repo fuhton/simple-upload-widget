@@ -4,7 +4,7 @@ Plugin Name: Simple Upload Widget
 Description: Displays an Image for your homepage.
 Author: Nick Smith
 Author URI: http://iliketheideaof.us
-Version: 0.0.1
+Version: 0.1
 */
 
 //Class Init
