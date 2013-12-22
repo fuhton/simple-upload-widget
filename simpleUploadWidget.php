@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Simple Upload Widget
-Description: Displays an Image for your homepage.
+Description: Widget that allows for files to be uploaded
 Author: Nick Smith
 Author URI: http://iliketheideaof.us
 Version: 0.1
