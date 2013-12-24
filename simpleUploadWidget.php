@@ -4,7 +4,7 @@ Plugin Name: Simple Upload Widget
 Description: Widget that allows for files to be uploaded
 Author: Nick Smith
 Author URI: http://iliketheideaof.us
-Version: 0.1
+Version: 0.1.1
 */
 
 //Class Init
@@ -32,15 +32,13 @@ class Simple_Upload_Widget extends WP_Widget
 
     public function form( $instance )
     {
-        $text  = '<p>';
-        $text .= '<label for="%1$s">Media</label><br />';
-        $text .= '<input type="text" class="img" name="%1$s" id="%1$s" value="%2$s" />';
-        $text .= '<input type="button" class="select-img" value="Select Media" />';
-        $text .= '</p>';
-
-        $image_uri = $this->get_field_id('image_uri');
-        $image_instance = $instance['image_uri'];
-        printf(__($text), $image_uri, $image_instance);
+      ?>
+     <p>
+       <label for="<?php echo $this->get_field_id('image_uri'); ?>">Image</label><br />
+       <input type="text" class="img" name="<?php echo $this->get_field_name('image_uri'); ?>" id="<?php echo $this->get_field_id('image_uri'); ?>" value="<?php echo $instance['image_uri']; ?>" />
+       <input type="button" class="select-img" value="Select Image" />
+     </p>
+     <?php
     }
 }
 

@@ -9,7 +9,7 @@ Widget that allows for files to be uploaded. Returns the uploaded media as an im
 
 == Description ==
 
-Available on Github for review.
+[Available on GitHub](https://github.com/fuhton/simple-upload-widget)
 
 = Usage =
 
