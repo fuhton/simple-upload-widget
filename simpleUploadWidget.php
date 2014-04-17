@@ -4,7 +4,11 @@ Plugin Name: Simple Upload Widget
 Description: Widget that allows for files to be uploaded
 Author: Nick Smith
 Author URI: http://iliketheideaof.us
+<<<<<<< HEAD
 Version: 0.1.2
+=======
+Version: 0.1.1
+>>>>>>> 02424ddd5dae98c12a46a69a28e6d8b637249aa8
 */
 
 //Class Init
