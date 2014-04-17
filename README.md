@@ -1,6 +1,6 @@
 #Simple Upload Widget
 
-Widget that allows for files to be uploaded. Returns the uploaded media as an image
+Widget that allows for files to be uploaded. Returns the uploaded media as an image path
 
 ##Usage
 
