@@ -12,9 +12,10 @@ function suwUploader() {
     _orig_send_attachment = wp.media.editor.send.attachment;
 
     jQuery('input.suw-button-select').click(function(e) {
-        var send_attachment_bkp = wp.media.editor.send.attachment;
-        var button = jQuery(this);
-        var input = jQuery(this).prev('.suw-input-field');
+        var send_attachment_bkp, button, input, value;
+        send_attachment_bkp = wp.media.editor.send.attachment;
+        button = jQuery(this);
+        input = jQuery(this).prev('.suw-input-field');
         _custom_media = true;
         wp.media.editor.send.attachment = function(props, attachment){
             if ( _custom_media ) {
@@ -23,7 +24,6 @@ function suwUploader() {
                 return _orig_send_attachment.apply( this, [props, attachment] );
             };
         }
-
         wp.media.editor.open(button);
         return false;
     });
